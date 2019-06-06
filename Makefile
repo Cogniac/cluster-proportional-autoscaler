@@ -40,7 +40,7 @@ ALL_ARCH := amd64 arm arm64 ppc64le
 
 # Set default base image dynamically for each arch
 ifeq ($(ARCH),amd64)
-    BASEIMAGE?=alpine
+    BASEIMAGE?=debian:buster
 endif
 ifeq ($(ARCH),arm)
     BASEIMAGE?=armel/busybox
